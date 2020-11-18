@@ -1,0 +1,56 @@
+
+{
+   "application": {
+      "menu": {
+         "home": "Home",
+         "service": "Service",
+         "book_appointment": "Book appointment",
+         "test": "Psychiatric test",
+         "contacts": "Contact us",
+         "join": "Join us!"
+      }
+   },
+    "formdetails": [
+      {
+         "@id": "1",
+         "name": "John",
+         "email": "john@gmail.com",
+         "phone_number": "973298421",
+         "Specialisation": "Phychiatrist",
+         "experience": "5 years",
+         "description": "Description about past experience"
+      },
+      {
+         "@id": "2",
+         "name": "Mary",
+         "email": "mary@gmail.com",
+         "phone_number": "773298421",
+         "Specialisation": "Clinical practitioners",
+         "experience": "3 years",
+         "description": "Description about past experience"
+      },
+	   {
+         "@id": "3",
+         "name": "Harry",
+         "email": "harry@gmail.com",
+         "phone_number": "873298421",
+         "Specialisation": "Cognitive psychologist",
+         "experience": "8 years",
+         "description": "Description about past experience"
+      }
+   ],
+   "footer": {
+      "contact": {
+         "Line1": "20,Alagar Street",
+         "city": "Madurai",
+         "pincode": "007"
+      },
+      "navigation": {
+         "aboutus": "About Us",
+         "works": "How it works",
+         "join": "Join us",
+         "contacts": "Contact Us"
+      },
+      "rights": "Copyright 2020"
+   }
+}

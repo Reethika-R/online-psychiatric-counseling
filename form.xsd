@@ -1,0 +1,56 @@
+<xml version="1.0">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:computer= "http://www.w3.org/2001/XMLSchema-instance" targetnamespace="http://www.w3.org/2001/XMLSchema-instance">
+
+
+<xs:element name="application">
+
+<xs:complexType name="details">
+    <xs:all>
+	<xs:element name="join" type="xs:string"/>
+	<xs:element name="contacts" type="xs:string"/>
+	</xs:all>
+</xs:complexType> 
+
+<xs:complexType name="menu">
+   <xs:all>
+	 <xs:extension base="details"/>
+
+     <xs:element name="home" type="xs:string"/>
+     <xs:element name="service" type="xs:string"/>
+     <xs:element name="book_appointment" type="xs:string"/>
+     <xs:element name="test" type="xs:string"/>	 
+    </xs:all>
+</xs:complexType>
+
+<xs:complexType name="application_form">
+    <xs:sequence>
+	<xs:element name="name" type="xs:string"/>
+	<xs:element name="email" type="xs:string"/>
+	<xs:element name="phone_number" type="xs:string"/>	
+	<xs:element name="Specialisation" type="xs:string"/>
+	<xs:element name="experience" type="xs:string"/>
+	<xs:element name="description" type="xs:string"/>
+	</xs:sequence>
+</xs:complexType> 
+
+<xs:complexType name="footer">
+	<xs:complexContent>
+	<xs:all>
+	<xs:complexType name="contact">
+        <xs:element name="Line1" type="xs:string"/>	
+        <xs:element name="city" type="xs:string"/>	
+        <xs:element name="pincode" type="xs:string"/>		  
+	<xs:complexType>  
+
+    <xs:complexType name="navigation">
+	  <xs:extension base="details"/>
+	  <xs:element name="aboutus" type="xs:string"/>	
+      <xs:element name="works" type="xs:string"/>	
+	<xs:complexType> 
+	
+    <xs:element name="rights" type="xs:string"/>	
+    </xs:all>
+	</xs:complexContent>
+</xs:complexType>
+
+</xs:element>

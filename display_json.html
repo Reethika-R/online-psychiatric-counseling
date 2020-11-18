@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Doctor Application</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/fontawesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
+   </head>
+<body style="background-color:pink">
+   <div id="header" class="header">
+         <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+            <div class="container">
+               <a class="navbar-brand" href="#">Mindful</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="show-menu">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#about">Services</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="docdisplay.html">Book an appointment</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#hiw">Psychiatric test</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#wcs">Contact us</a>
+                     </li>
+                     <li class="nav-item">
+                         <li class="nav-link"><button class="blue_bt"><a href="docapply.html">Join us!</a></button></li>
+                     </li>
+
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+
+
+<br><br><br>
+<center>
+<table id="table" border="1" style="border-collapse:collapse;">
+</table>
+<h1 style="color:red;">Doctor's list</h1>
+<ul id="demo"></ul>
+<script>
+var x="";
+var y="";
+var z="";
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myobj = JSON.parse(this.responseText);
+    for( i in myobj.formdetails)
+    {
+        x +="<li><ol><b>"+myobj.formdetails[i].name+"-"+myobj.formdetails[i].Specialisation+"<b></ol></li>";
+    }
+    document.getElementById("demo").innerHTML = x;
+  } 
+};
+xmlhttp.open("GET", "json.txt", true);
+xmlhttp.send();
+</script>
+<br><br><br>
+	  <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="footer_blog_section">
+                     <h4 class="text-uppercase">Mindful</h4>
+                     <p style="margin-top: 5px;">Say Goodbye to Confusion & Anxiety.
+Get Professional Diagnosis & Treatment, Online!
+
+</p>
+                  </div>
+               </div>
+               <!--div class="col-lg-2 col-md-6 col-12">
+                  
+               </div-->
+               <div class="col-lg-4 col-md-6 col-12">
+                  <div class="item">
+                     <h4 class="text-uppercase">Contact Info</h4>
+                     <p><strong>Corporate Office Address:</strong></p>
+                     <p><img src="phone.jpeg" alt="#" /> 20,Alagar Street,Madurai-007</p>
+                     <p><strong>For queries:</strong></p>
+                     <p><img src="location.jpeg" alt="#" /> 987 654 3210</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="item">
+                     <h4 class="text-uppercase">Navigation</h4>
+                     <ul>
+                        <li><a href="index.html">About us</a></li>
+                        <li><a href="index.html">How It Works</a></li>
+                        <li><a href="docapply.html">Join us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright text-center">
+            <p>Copyright 2020</p>
+         </div>
+      </footer>
+</body>
+</html>
