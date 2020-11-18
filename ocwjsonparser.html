@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse:collapse;
+}
+th, td {
+  padding: 5px;
+}
+body{
+  background-color:yellow;
+}
+</style>
+</head>
+<body>
+<center>
+<br><br><br><br>
+<h1>Patients' list</h1>
+<table id="demo"></table>
+
+<script>
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "ocw.xml", true);
+  xhttp.send();
+  
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>patient Name</th><th>Appt Date</th><th>Type</th><th>Fee amount</th></tr>";
+  var x = xmlDoc.getElementsByTagName("table/row");
+  for (i = 0; i < x.length; i++) {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("Patientname")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("appointmentDate")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("fee_amount")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+</center>
+</body>
+</html>

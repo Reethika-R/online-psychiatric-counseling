@@ -1,0 +1,70 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="application">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="menu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="home"/>
+              <xs:element type="xs:string" name="service"/>
+              <xs:element type="xs:string" name="book_appointment"/>
+              <xs:element type="xs:string" name="test"/>
+              <xs:element type="xs:string" name="contact"/>
+              <xs:element type="xs:string" name="join"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dashboard">
+          <xs:complexType mixed="true">
+            <xs:sequence>
+              <xs:element name="table">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="row" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Patientname"/>
+                          <xs:element type="xs:string" name="appointmentDate"/>
+                          <xs:element type="xs:string" name="type"/>
+                          <xs:element type="xs:string" name="fee_amount"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="name" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="footer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="contact">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Line1"/>
+                    <xs:element type="xs:string" name="city"/>
+                    <xs:element type="xs:byte" name="pincode"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="navigation">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="aboutus"/>
+                    <xs:element type="xs:string" name="works"/>
+                    <xs:element type="xs:string" name="join"/>
+                    <xs:element type="xs:string" name="contact"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="rights"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

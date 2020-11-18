@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"  standalone = "no"?> 
+<?xml-stylesheet type="text/xsl" href="form_xsl.xsl"?> 
+
+<form>
+<application>
+<menu>
+   <home>Home</home>
+   <service>Service</service>
+   <book_appointment>Book appointment</book_appointment>
+   <test>Psychiatric test</test>
+   <contacts>Contact us</contacts>
+   <join>Join us!</join>
+</menu>
+</application>
+<formdetails>
+<application_form id="1">
+   <name>John</name>
+   <email>john@gmail.com</email>
+   <phone_number>973298421</phone_number>
+   <Specialisation>Phychiatrist</Specialisation>
+   <experience>5 years</experience>
+   <description>Description about past experience</description>
+</application_form>
+
+<application_form id="2">
+   <name>Mary</name>
+   <email>mary@gmail.com</email>
+   <phone_number>773298421</phone_number>
+   <Specialisation>Clinical practitioners</Specialisation>
+   <experience>3 years</experience>
+   <description>Description about past experience</description>
+</application_form>
+
+<application_form id="3">
+   <name>Harry</name>
+   <email>harry@gmail.com</email>
+   <phone_number>873298421</phone_number>
+   <Specialisation>Cognitive psychologist</Specialisation>
+   <experience>8 years</experience>
+   <description>Description about past experience</description>
+</application_form>
+
+</formdetails>
+<footer>
+  <contact>
+     <Line1>20,Alagar Street</Line1>
+     <city>Madurai</city>
+     <pincode>007</pincode>
+  </contact>
+  <navigation>
+      <aboutus>About Us</aboutus>
+      <works>How it works</works>
+      <join>Join us</join>
+      <contacts>Contact Us</contacts>
+  </navigation>
+  <rights>Copyright 2020</rights>
+</footer>
+</form>

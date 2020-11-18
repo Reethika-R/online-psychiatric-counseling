@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"? standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="ocwstyle.xsl"?>
+<application>
+<menu>
+   <home>Home</home>
+   <service>Service</service>
+   <book_appointment>Book appointment</book_appointment>
+   <test>Psychiatric test</test>
+   <contact>Contact us</contact>
+   <join>Join us!</join>
+</menu>
+
+<dashboard> Welcome Doctor! Here's your patients log.
+	<table name="patients">
+		<row name="1">
+			<Patientname>Richard</Patientname>
+			<appointmentDate>Nov 11</appointmentDate>
+			<type>General</type>
+			<fee_amount>Rs.250</fee_amount>
+		</row>
+		
+		<row name="2">
+			<Patientname>George</Patientname>
+			<appointmentDate>Nov 20</appointmentDate>
+			<type>Special</type>
+			<fee_amount>Rs.580</fee_amount>
+		</row>
+		
+		<row name="3">
+			<Patientname>Charles</Patientname>
+			<appointmentDate>Nov 22</appointmentDate>
+			<type>General</type>
+			<fee_amount>Rs.300</fee_amount>
+		</row>
+		
+		<row name="4">
+			<Patientname>Cammie</Patientname>
+			<appointmentDate>Nov 23</appointmentDate>
+			<type>General</type>
+			<fee_amount>Rs.290</fee_amount>
+		</row>
+		
+		<row name="5">
+			<Patientname>Victoria</Patientname>
+			<appointmentDate>Nov 25</appointmentDate>
+			<type>Special</type>
+			<fee_amount>Rs.650</fee_amount>
+		</row>
+	</table>
+
+</dashboard>
+
+<footer>
+  <contact>
+     <Line1>20,Alagar Street</Line1>
+     <city>Madurai</city>
+     <pincode>007</pincode>
+  </contact>
+  <navigation>
+      <aboutus>About Us</aboutus>
+      <works>How it works</works>
+      <join>Join us</join>
+      <contact>Contact Us</contact>
+  </navigation>
+  <rights>Copyright 2020</rights>
+</footer>
+</application>

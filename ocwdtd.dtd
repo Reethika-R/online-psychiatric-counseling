@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT application (menu,application_form,footer)>
+
+<!ELEMENT menu (home,service,book_appointment,test,contacts,join)>
+<!ELEMENT home (#PCDATA)>
+<!ELEMENT service (#PCDATA)>
+<!ELEMENT book_appointment (#PCDATA)>
+<!ELEMENT test (#PCDATA))>
+<!ELEMENT contacts (#PCDATA)>
+<!ELEMENT join (#PCDATA)>
+
+<!ELEMENT dashboard (#PCDATA)>
+<!ELEMENT table (#PCDATA)>
+<!ELEMENT row(patientname,appointmentDate,type,fee_amount)
+<!ELEMENT Patientname (#PCDATA)>
+<!ELEMENT appintmentDate (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT fee_amount (#PCDATA))>
+
+
+<!ELEMENT footer (contact,navigation,rights)>
+<!ELEMENT contact(Line1,city,pincode)>
+<!ELEMENT Line1 (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT pincode (#PCDATA)>
+
+<!ELEMENT navigation(aboutus,works,join,contacts)>
+<!ELEMENT aboutus (#PCDATA)>
+<!ELEMENT works (#PCDATA)>
+<!ELEMENT join (#PCDATA)>
+<!ELEMENT contacts (#PCDATA)>
+
+<!ELEMENT rights(#PCDATA)>
+<!ATTLIST application_form heading #REQUIRED)>

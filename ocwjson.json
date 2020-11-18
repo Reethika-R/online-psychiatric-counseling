@@ -1,0 +1,69 @@
+{
+   "application":{
+   "menu": {
+      "home": "Home",
+      "service": "Service",
+      "book_appointment": "Book appointment",
+      "test": "Psychiatric test",
+      "contact": "Contact us",
+      "join": "Join us!"
+	  }
+   },
+   "dashboard": {
+      "#text": "Welcome Doctor! Here's your patients log.",
+      "table": {
+         "@name": "patients",
+         "row": [
+            {
+               "@name": "1",
+               "Patientname": "Richard",
+               "appointmentDate": "Nov 11",
+               "type": "General",
+               "fee_amount": "Rs.250"
+            },
+            {
+               "@name": "2",
+               "Patientname": "George",
+               "appointmentDate": "Nov 20",
+               "type": "Special",
+               "fee_amount": "Rs.580"
+            },
+            {
+               "@name": "3",
+               "Patientname": "Charles",
+               "appointmentDate": "Nov 22",
+               "type": "General",
+               "fee_amount": "Rs.300"
+            },
+            {
+               "@name": "4",
+               "Patientname": "Cammie",
+               "appointmentDate": "Nov 23",
+               "type": "General",
+               "fee_amount": "Rs.290"
+            },
+            {
+               "@name": "5",
+               "Patientname": "Victoria",
+               "appointmentDate": "Nov 25",
+               "type": "Special",
+               "fee_amount": "Rs.650"
+            }
+         ]
+      }
+   },
+   "footer": {
+      "contact": {
+         "Line1": "20,Alagar Street",
+         "city": "Madurai",
+         "pincode": "007"
+      },
+      "navigation": {
+         "aboutus": "About Us",
+         "works": "How it works",
+         "join": "Join us",
+         "contact": "Contact Us"
+      },
+      "rights": "Copyright 2020"
+   }
+}
